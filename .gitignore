@@ -1,0 +1,13 @@
+# 容器数据目录
+*-data/
+
+# 环境变量
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
