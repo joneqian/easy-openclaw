@@ -20,6 +20,26 @@ docker compose -f openclaw-software-company.yml up -d
 - **Dashboard**: http://localhost:3100
 - **Gateway**: http://localhost:18800
 
+### 查看日志
+
+```bash
+docker compose -f openclaw-software-company.yml logs -f openclaw-software-company
+```
+
+### 进入容器
+
+```bash
+docker compose -f openclaw-software-company.yml exec openclaw-software-company bash
+```
+
+### 初始化配置
+
+进入容器后运行：
+
+```bash
+openclaw onboard
+```
+
 ### 停止
 
 ```bash
