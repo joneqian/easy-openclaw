@@ -19,7 +19,7 @@ services:
 
     # 数据卷挂载
     volumes:
-      - ./openclaw-software-company-data:/home/node/.openclaw
+      - ./openclaw-software-company-data:/root/.openclaw
       - /var/run/docker.sock:/var/run/docker.sock
 
     # Docker 沙箱支持
