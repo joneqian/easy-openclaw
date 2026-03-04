@@ -3,13 +3,14 @@ version: '3.8'
 services:
   openclaw-software-company:
     image: openclaw:latest
+    user: root
     container_name: openclaw-software-company
     restart: unless-stopped
 
     # 端口映射
     ports:
-      - '18800:18789' # Gateway 网关端口
-      - '3100:3000' # Dashboard 端口
+      - '18789:18789' # Gateway 网关端口
+      - '3000:3000' # Dashboard 端口
 
     # 环境变量
     environment:
